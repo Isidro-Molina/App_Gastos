@@ -3,9 +3,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 const { router } = require('./routes/index.js');
 const { configDotenv } = require('dotenv');
+const { connectToDB } = require('./db/index.js');
 configDotenv();
-// const port = process.env.PORT;
-
 const app = express();
 
 // app.use(
